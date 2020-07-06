@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+test.html
+.gitignore
 
 # local env files
 .env.local
