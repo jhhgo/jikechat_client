@@ -1,6 +1,7 @@
 <template>
   <div class="header">
     <slot name="left"></slot>
+    <slot name="mid"></slot>
     <slot name="right"></slot>
   </div>
 </template>
@@ -20,27 +21,39 @@ export default {};
   .left {
     position: absolute;
     top: 50%;
-    margin-top: -12 / @rem;
-    width: 24 / @rem;
-    height: 24 / @rem;
+    transform: translateY(-50%);
     background-size: contain;
     background-repeat: no-repeat;
     margin-left: 16 / @rem;
     &.icon {
-        .bg-image('../../assets/imgs/左去');
+      width: 24 / @rem;
+      height: 24 / @rem;
+      .bg-image("../../assets/imgs/左去");
+    }
+    &.avatar {
+      border-radius: 8 / @rem;
+      width: 34 / @rem;
+      height: 34 / @rem;
+      background-image: url("../../assets/imgs/avatar/头像1.jpg");
     }
   }
-
   .right {
     position: absolute;
     top: 50%;
-    margin-top: -3 / @rem;
+    transform: translateY(-50%);
     right: 16 / @rem;
-    width: 26 / @rem;
-    height: 6 / @rem;
-    .bg-image('../../assets/imgs/more');
     background-size: contain;
     background-repeat: no-repeat;
+    &.more {
+      .bg-image("../../assets/imgs/more");
+      width: 26 / @rem;
+      height: 6 / @rem;
+    }
+    &.add {
+      width: 24 / @rem;
+      height: 24 / @rem;
+      .bg-image("../../assets/imgs/添加");
+    }
   }
 }
 </style>

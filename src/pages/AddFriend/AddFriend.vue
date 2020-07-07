@@ -2,7 +2,7 @@
   <div id="wrap">
     <HeaderTop>
       <div class="left icon" slot="left"></div>
-      <div class="right" slot="right"></div>
+      <div class="right more" slot="right"></div>
     </HeaderTop>
     <div class="bg"></div>
     <div class="content">
