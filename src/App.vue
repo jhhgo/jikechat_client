@@ -8,7 +8,13 @@
 export default {
   name: "App"
 };
+
+let html = document.querySelector("html");
+html.style.fontSize = document.documentElement.clientWidth / 16 + "px";
 </script>
 
-<style>
+<style lang="less">
+  #app {
+    height: 100%;
+  }
 </style>

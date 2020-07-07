@@ -1,0 +1,28 @@
+
+/* rem */
+@rem: 375/16rem;
+
+/* 行为色 */
+@color-primary: #FEE453;
+@color-success: #5799FF;
+@color-danger: #FF5D5B;
+@color-disable: rgba(39,40,50,0.2);
+
+/* 文字基本颜色 */
+@text-color: #272832; // 基本色
+@text-color-inverse: #fff; //反色
+@text-color-gray: rgba(39,40,50,0.6); // 辅助灰色
+
+
+/* 根据dpr显示2x 3x图 */
+// url: ../../assets/imgs/more
+.bg-image(@url) {
+    background-image: ~"url('@{url}@2x.png')";
+    @media (-webkit-min-device-pixel-ratio:3), (mid-device-pixel-ratio:3) {
+        background-image: ~"url('@{url}@3x.png')";
+    }
+}
+
+// ../../assets/imgs/more@3x.png
+
+// ../../assets/imgs/more@2x.png

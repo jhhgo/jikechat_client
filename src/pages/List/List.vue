@@ -1,6 +1,7 @@
 <template>
   <div>
       List
+      <h1>haha</h1>
   </div>
 </template>
 
@@ -10,6 +11,5 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
 </style>
